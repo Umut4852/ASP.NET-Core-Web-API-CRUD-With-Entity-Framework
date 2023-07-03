@@ -11,9 +11,9 @@ namespace ASP.NET_Core_Web_API_CRUD.Controllers
     {
         private readonly DataContext context;
 
-        public personController(DataContext context)
+        public personController(DataContext _context)
         {
-            this.context = context;
+            context = _context;
         }
 
         [HttpGet]
